@@ -1,18 +1,41 @@
+$text-color: #202121;
+$text-color-darken: darken($text-color, 50%);
+$active-color: #63bdd3;
+
+a {
+  text-decoration: none;  
+  color: $text-color;
+}
+
 .header {
-  color: #202121;
-  padding: 1rem;
+  color: $text-color;
   font-size: 1rem;
   border-bottom: 1px solid #E6EAEA;
-  height: 40px;
-  line-height: 40px;
-
-  .item {
+  height: 80px;
+  line-height: 80px;
+  .item a {
+    display: inline-block; 
     padding: 0 23px;
+    &:hover {
+      color: $active-color;
+      border-bottom: solid 2px $active-color;
+      }
   }
 
   .logo {
+    color: #4f5254;
+    font-size: 1.2rem;
     font-weight: 800;
+    padding: 0 25px;
+
+    img {
+      width: 50px;
+      margin: 0 5px 0 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
+
 }
 
 .box-left {
