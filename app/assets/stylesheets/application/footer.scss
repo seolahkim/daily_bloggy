@@ -1,0 +1,12 @@
+footer {
+  min-height: 100px;
+  padding: 50px 100px;
+  text-align: center;
+  line-height: 2.3;
+  background-color: #f4f4f4;
+  font-size: $small-font-size;
+  
+  .copyright {
+    font-weight: 600;
+  }
+}

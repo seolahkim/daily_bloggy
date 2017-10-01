@@ -1,41 +1,11 @@
-$text-color: #202121;
-$text-color-darken: darken($text-color, 50%);
-$active-color: #63bdd3;
-
 a {
   text-decoration: none;  
   color: $text-color;
+
 }
 
-.header {
-  color: $text-color;
-  font-size: 1rem;
-  border-bottom: 1px solid #E6EAEA;
-  height: 80px;
-  line-height: 80px;
-  .item a {
-    display: inline-block; 
-    padding: 0 23px;
-    &:hover {
-      color: $active-color;
-      border-bottom: solid 2px $active-color;
-      }
-  }
-
-  .logo {
-    color: #4f5254;
-    font-size: 1.2rem;
-    font-weight: 800;
-    padding: 0 25px;
-
-    img {
-      width: 50px;
-      margin: 0 5px 0 0;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
-
+.container {
+  margin: 0 0 100px 0;
 }
 
 .box-left {
@@ -45,4 +15,20 @@ a {
 .box-right {
   float: right;
   display: flex;
+}
+
+.categories-wrapper {
+  text-align: left;
+  .title { 
+    font-weight: 800;
+    font-size: 19px;
+  }
+
+  .category {
+    font-weight: 800;
+  }
+  
+  .sub-category {
+    padding: 0 0 0 15px;
+  }
 }
