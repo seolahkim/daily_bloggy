@@ -18,3 +18,4 @@ Category.create parent: "Lodash",           parent_id: Category.find_by(parent: 
 Category.create parent: "RubyOnRails"
 Category.create parent: "Git"
 Category.create parent: "Tools"
+Category.create parent: "Atom",             parent_id: Category.find_by(parent: 'Tools').id
