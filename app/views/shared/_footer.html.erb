@@ -1,0 +1,20 @@
+<footer>
+<div class="categories-wrapper">
+<span class="title">Categories</span>
+<%= categories_tab(@categories) %>
+</div>
+<%# list of blog %>
+<div>
+  <%= link_to 'Home', feeds_path %>
+  &nbsp;|&nbsp;
+  <%= link_to 'Articles', articles_path %>
+  &nbsp;|&nbsp;
+  <%= link_to 'Github', articles_path %>
+</div>
+
+<%# copyright %>
+<div class="copyright">
+© 2017
+<span class="name-label">SeolAh Kim</span>
+</div>
+  </footer>

@@ -1,13 +1,13 @@
 <meta charset="UTF-8">
 <%= stylesheet_link_tag 'application', media: 'all' %>
 <div class="header">
-  <a href="#" class="box-left logo">
+  <a href="/feeds" class="box-left logo">
     <%= image_tag "logo.png", alt: "BetterThink" %>
     <span> BetterThinker </span>
   </a>
   <div class="box-right item-wrapper">
     <div class="item"><%= link_to 'Home', feeds_path %> </div>
-    <div class="item"><%= link_to 'Articles', home_index_path %> </div>
+    <div class="item"><%= link_to 'Articles', articles_path %> </div>
     <div class="item"><%= link_to 'Resume', resume_index_path %> </div>
   </div>
 </div>
