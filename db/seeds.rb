@@ -5,3 +5,16 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# Create a default list of Category
+Category.create parent: "UI/UX"
+Category.create parent: "CSS"
+Category.create parent: "JavaScript"
+Category.create parent: "TypeScript",       parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "CoffeeScript",     parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "Angular2",         parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "Underscore",       parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "Lodash",           parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "RubyOnRails"
+Category.create parent: "Git"
+Category.create parent: "Tools"
