@@ -6,17 +6,18 @@
 # Better Thinker
 
 ## Specifications
-### Ruby
+#### Ruby
 * 2.4v
 
-### Databse
+#### Databse
 * MySQL
 
 
-
+　
+ 
 ## Additional
 
-### Using webhook integrations with Slack API
+#### Using webhook integrations with Slack API
 * for management issues and issues with github
 * for check system errors
 
