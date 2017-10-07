@@ -17,8 +17,14 @@ a {
   display: flex;
 }
 
-.categories-wrapper {
+.clear {
+  clear: both;
+}
+
+.footer-box {
+  width: 25%;
   text-align: left;
+  float: left;
   .title { 
     font-weight: 800;
     font-size: 19px;
