@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :feeds, only: %w(index show)
   resources :categories, only: %w(index)
   resources :home, only: %w(index)
-  resources :articles, only: %w(index)
+  resources :articles, only: %w(index show)
   resources :resume, only: %w(index)
 end
