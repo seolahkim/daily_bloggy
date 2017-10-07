@@ -1,0 +1,11 @@
+<%- recent_posts = Article.recent %>
+<span class="title">Recent Posts</span>
+<div>
+<%- if recent_posts.blank? %>
+  <%= content_tag(:span, "-")%>
+<%- else -%>
+  <%- recent_posts.each do |post| %>
+  <%= link_to post.title, articles_path(id: post.id) =%>
+  <%- end -%>
+<%- end -%>
+</div>

@@ -1,10 +1,21 @@
 <footer>
-<div class="categories-wrapper">
+<div>
+<div class="footer-box">
+<%= render partial: "footer/recent_posts" %>
+</div>
+<div class="footer-box">
 <span class="title">Categories</span>
 <%= categories_tab(@categories) %>
 </div>
+<div class="footer-box">
+<%= render partial: "footer/useful_links" %>
+</div>
+<div class="footer-box">
+<%= render partial: "footer/socials" %>
+</div>
+</div>
 <%# list of blog %>
-<div>
+<div class="clear" style="padding: 50px 0 0 0;">
   <%= link_to 'Home', feeds_path %>
   &nbsp;|&nbsp;
   <%= link_to 'Articles', articles_path %>
@@ -13,8 +24,8 @@
 </div>
 
 <%# copyright %>
-<div class="copyright">
+<div class="copyright" style="padding: 25px 0 0 0;">
 © 2017
 <span class="name-label">SeolAh Kim</span>
 </div>
-  </footer>
+</footer>
