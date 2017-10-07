@@ -1,24 +1,24 @@
-# README
+<a href="https://codeclimate.com/github/codeclimate/codeclimate"><img src="https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg" /></a>　
+<a href="https://codeclimate.com/github/codeclimate/codeclimate/coverage"><img src="https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg" /></a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+# Better Thinker
 
-* System dependencies
+## Specifications
+#### Ruby
+* 2.4v
 
-* Configuration
+#### Databse
+* MySQL
 
-* Database creation
 
-* Database initialization
+　
+ 
+## Additional
 
-* How to run the test suite
+#### Using webhook integrations with Slack API
+* for management issues and issues with github
+* for check system errors
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
