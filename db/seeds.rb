@@ -17,6 +17,7 @@ Category.create parent: "Underscore",       parent_id: Category.find_by(parent: 
 Category.create parent: "Lodash",           parent_id: Category.find_by(parent: 'JavaScript').id
 Category.create parent: "Ruby"
 Category.create parent: "RubyOnRails",      parent_id: Category.find_by(parent: 'Ruby').id
+Category.create parent: "Jekyll",           parent_id: Category.find_by(parent: 'Ruby').id
 Category.create parent: "Git"
 Category.create parent: "Tools"
 Category.create parent: "Atom",             parent_id: Category.find_by(parent: 'Tools').id
