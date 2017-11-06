@@ -8,7 +8,7 @@ module FooterHelper
         sub_category_tags = 
         c.sub_categories.map do |s| 
           related_articles = Article.related_category(s.id)
-          link_tag = link_to("- #{s.parent} (#{related_articles.count})", category_path(c.id))
+          link_tag = link_to("- #{s.parent} (#{related_articles.count})", category_path(s.id))
           content_tag(:div, link_tag, class: "sub-category")
         end
       end
