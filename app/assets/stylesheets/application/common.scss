@@ -38,3 +38,15 @@ a {
     padding: 0 0 0 15px;
   }
 }
+
+.content-inner {
+   padding: 1.5rem 0;
+   position: relative;
+   width: 100%;
+   max-width: 1000px;
+   margin: auto;
+}
+
+.content-inner.summary {
+   max-width: 630px;
+}
