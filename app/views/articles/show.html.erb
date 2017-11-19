@@ -1,0 +1,11 @@
+<div class="content-container">
+  <div class="content-inner">
+    <header>
+      <h1><%= @article.title %></h1>
+    </header>
+    <article class="article-content">
+      <%= raw markdown_to_html @article.content %>
+    </article>
+  </div>
+</div>
+

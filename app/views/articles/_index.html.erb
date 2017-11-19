@@ -1,1 +1,11 @@
-<%= raw markdown_to_html article.content %>
+<article class="summary-box">
+  <div class="summary-title">
+    <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
+  </div>
+  <div class="summary-content">
+    <%= truncate(sanitize(article.content, tags: %w(), attributes: %w(href)), length: 200) %>
+  </div>
+</article>
+
+<%#= raw markdown_to_html article.content %>
+
