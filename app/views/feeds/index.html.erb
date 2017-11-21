@@ -1,5 +1,8 @@
 <div class="content-container">
   <div class="content-inner summary">
-    <%= render partial: 'articles/index', collection: @articles, as: :article %>
+    <header>
+      <h2 class="pane-title">Recent Articles</h2>
+    </header>
+    <%= render partial: 'feeds/index', collection: @articles, as: :article %>
   </div>
 </div>
