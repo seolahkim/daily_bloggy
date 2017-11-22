@@ -1,31 +1,45 @@
 <footer>
-<div>
-<div class="footer-box">
-<%= render partial: "footer/recent_posts" %>
+<div class="grid-row">
+<p class="grid-12">
+  <em class="footer-logo logo">BETTER THINKER</em>
+  <span class="footer-logo">UX Design & Object oriented design pattern</span>
+</p>
+<div class="grid-12" style="padding-top: 2em;">
+<p class="long-phrase location"><i class="fa fa-map-o" aria-hidden="true"></i>108-0073 東京都港区三田3-3-6</p>
+<p class="long-phrase email"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>seolahkim.global@gmail.com</p>
+</div>
+<div class="">
+<ul class="socials">
+<li><a href="https://github.com/seolahkim" class="fa fa-github" target="_blank"></a></li>
+<li><a href="https://www.facebook.com/seolah.kim.948" class="fa fa-facebook" target="_blank"></a></li>
+</ul>
+</div>
+<%# copyright %>
+<div class="grid-row copyright">
+<div class="grid-12">© 2017<span class="name-label">SeolAh Kim</span></div>
+</div>
+
+<!--<div class="footer-box">
+<%#= render partial: "footer/recent_posts" %>
 </div>
 <div class="footer-box">
 <span class="title">Categories</span>
-<%= categories_tab(@categories) %>
+<%#= categories_tab(@categories) %>
 </div>
 <div class="footer-box">
-<%= render partial: "footer/useful_links" %>
+<%#= render partial: "footer/useful_links" %>
 </div>
 <div class="footer-box">
-<%= render partial: "footer/socials" %>
+<%#= render partial: "footer/socials" %>
 </div>
 </div>
 <%# list of blog %>
 <div class="clear" style="padding: 50px 0 0 0;">
-  <%= link_to 'Home', feeds_path %>
+  <%#= link_to 'Home', feeds_path %>
   &nbsp;|&nbsp;
-  <%= link_to 'Articles', articles_path %>
+  <%#= link_to 'Articles', articles_path %>
   &nbsp;|&nbsp;
-  <%= link_to 'Github', articles_path %>
+  <%#= link_to 'Github', articles_path %>
 </div>
-
-<%# copyright %>
-<div class="copyright" style="padding: 25px 0 0 0;">
-© 2017
-<span class="name-label">SeolAh Kim</span>
-</div>
+-->
 </footer>

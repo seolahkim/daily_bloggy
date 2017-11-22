@@ -1,13 +1,70 @@
-$active-color: #c0272d;
-
 a {
   text-decoration: none;  
   color: $text-color;
 
 }
 
+.socials {
+  display: table;
+  padding: 0 0.5em;
+
+  li { float: left; }
+  a { 
+    font-size: x-large; 
+    padding: 1em 0.8em 1em 0;
+  }
+}
+
+.location {
+  i { padding: 0 0.5em 0 0; }  
+}
+
+.email {
+  i { padding: 0 0.5em 0 0; }  
+}
+
+.copyright {
+  padding: 2em 0 0 0;
+  font-weight: 600;
+}
+
+.phrase {
+  padding: 0 0.2em;
+  letter-spacing: 0.1em;
+}
+
+.long-phrase {
+  color: gray;  
+  font-weight: 500;
+}
+
+.logo {
+  color: #4f5254;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.06em;
+
+  &.footer-logo { font-weight: 700; }
+  
+  img {
+    width: 50px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
 .container {
   margin: 0 0 100px 0;
+}
+
+.content-container {
+  background-color: $background-default-color;  
+
+  .content-inner {
+    background-color: inherit; 
+  }
 }
 
 .box-left {
@@ -55,4 +112,65 @@ a {
 
 .pane-title {
   color: $active-color;
+}
+
+
+/* GRID */
+.grid-row > *, .panel > * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+.grid-row .grid-12, .panel .grid-12 {
+  width: 100%;
+  padding: 0 10px; 
+}
+
+.grid-row .grid-11, .panel .grid-11 {
+  float: left;
+  width: 91.666666667%;
+  padding: 0 10px; 
+}
+
+.grid-row .grid-10, .panel .grid-10 {
+  float: left;
+  width: 83.333333333%;
+  padding: 0 10px; 
+}
+
+.grid-row .grid-9, .panel .grid-9 {
+  float: left;
+  width: 75%;
+  padding: 0 10px;
+}
+
+.grid-row .grid-8, .panel .grid-8 {
+  float: left;
+  width: 66.666666667%;
+  padding: 0 10px;
+}
+
+.grid-row .grid-7, .panel .grid-7 {
+  float: left;
+  width: 58.333333333%;
+  padding: 0 10px;
+}
+
+.grid-row .grid-6, .panel .grid-6 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.grid-row .grid-5, .panel .grid-5 {
+  float: left;
+  width: 41.666666667%;
+  padding: 0 10px;
+}
+
+.grid-row .grid-4, .panel .grid-4, .grid-row .panel li, .panel .grid-row li, .panel li {
+  float: left;
+  width: 33.333333333%;
+  padding: 0 10px;
 }
