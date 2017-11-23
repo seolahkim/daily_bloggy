@@ -1,7 +1,9 @@
 a {
   text-decoration: none;  
-  color: $text-color;
+}
 
+.container a {
+  color: $link-base-color;
 }
 
 .socials {
@@ -66,13 +68,17 @@ a {
 }
 
 .container {
-  padding: 6em 0;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
   background-color: $background-default-color;  
 
   .content-inner {
     background-color: inherit; 
+    max-width: 630px;
+  }
+
+  .content-inner-main {
+    h1, h2, h3, h4, h5, h6 {
+      margin: 2em 0;
+    }
   }
 }
 
@@ -113,10 +119,6 @@ a {
    width: 100%;
    max-width: 1000px;
    margin: auto;
-}
-
-.content-inner.summary {
-   max-width: 630px;
 }
 
 .pane-title {

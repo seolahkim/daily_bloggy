@@ -4,7 +4,7 @@ $text-color-darken: darken($text-color, 50%);
 $theme-color: #54a2d8;
 
 $logo-base-color: #45494c;
-$link-base-color: $theme-color;
+$link-base-color: darken($theme-color, 10%);
 
 $active-color: darken($theme-color, 30%);
 
