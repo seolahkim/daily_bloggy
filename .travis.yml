@@ -4,16 +4,22 @@ rvm:
  - 2.4.1
 
 services:
-  - postgresql
+  - mysql
 
 bundler_args: "--without development --deployment"
 
 cache: bundler
 
+before_install:
+  - mysql -e 'CREATE DATABASE myapp_test DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;'
+ 
 before_script:
   - cp config/database.travis.yml config/database.yml
   - bundle exec rake db:create
   - bundle exec rake db:migrate
+
+after_success:
+  - bundle exec codeclimate-test-reporter
 
 script:
   - bundle exec rake test
