@@ -2,8 +2,9 @@
   <div class="summary-title">
     <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
   </div>
-  <div class="summary-content">
+  <div>
     <%= truncate(sanitize(article.rendered_content, tags: %w(), attributes: %w(href)), length: 200) %>
+    <%= render partial: 'shared/read_more', locals: {url_options: {controller: "/articles", action: "show", id: article.id}} %>
   </div>
 </article>
 
