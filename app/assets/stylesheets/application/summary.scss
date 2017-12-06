@@ -1,5 +1,18 @@
-$active-color: #c0272d;
-
 .summary article {
   font-size: 14px;
+}
+
+.summary-content {
+  display: table;
+  .inner, .read-more {
+    display: table-cell;  
+    vertical-align: middle;
+    padding: 0 10px;
+  }
+}
+
+.summary-meta {
+  color: $pale-color;
+  margin: 0 0 1.5em 0;
+  .date { margin: 0 10px; }
 }

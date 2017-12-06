@@ -16,6 +16,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
+article {
+  font-family: "Nanum Gothic","Noto Sans KR",sans-serif;
+}
+
 body {
   line-height: 1; }
 
@@ -40,11 +44,10 @@ table {
   border-spacing: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
+  font-weight: 700;
   margin: 1.5rem 0; }
    
 header, hr { margin: 1.5rem 0; }
 
-hr { border: 1px solid #a99c9c; } 
 /* RESET↑
 ----------------------------------------------------------------------------------------------------*/

@@ -9,7 +9,9 @@ article {
     margin-bottom: 0 !important; }
   
   a {
-    color: $link-base-color; }
+    color: black; 
+    font-size: 1.7em;
+    font-weight: 500;}
   a.absent {
     color: #cc0000; }
   a.anchor {

@@ -1,14 +1,13 @@
 <meta charset="UTF-8">
 <%= stylesheet_link_tag 'application', media: 'all' %>
-<div class="header">
-  <a href="/feeds" class="box-left logo">
-    <%= image_tag "logo.png", alt: "BetterThink" %>
+<nav class="header">
+  <a href="/feeds" class="box-left logo header-logo">
+    <i class="fa fa-code" aria-hidden="true"></i>
+    <%= display_breadcrumbs() if @breadcrumbs.present? -%>
   </a>
-  <%= display_breadcrumbs() if @breadcrumbs.present? -%>
-  
   <div class="box-right item-wrapper">
     <div class="item"><%= link_to 'Home', feeds_path %> </div>
     <div class="item"><%= link_to 'Articles', articles_path %> </div>
-    <div class="item"><%= link_to 'Resume', resume_index_path %> </div>
+    <div class="item"><%= link_to 'About', resume_index_path %> </div>
   </div>
-</div>
+</nav>
