@@ -1,0 +1,29 @@
+.feed-heading {
+   border-bottom: 1px solid #d6d6d6;
+   display: inline-block;
+   width: 100%;
+
+  .title, .navi { padding: 1em; }
+  .title { 
+    float: left; 
+    border-bottom: 3px solid #d6d6d6;
+  }
+  .navi { 
+    float: right;
+  }
+}
+
+.feed-box {
+  h3, h4 { margin: 0; }
+  h3 { 
+    font-weight: 600; 
+    margin-bottom: 0.5em;
+    a { 
+      background-color: $yellow-highlight-color;
+    }
+  }
+  h4 { 
+    font-weight: 400;
+    line-height: 1.6em;
+  }
+}

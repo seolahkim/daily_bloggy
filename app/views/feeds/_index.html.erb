@@ -1,12 +1,14 @@
-<article class="summary-box">
-  <div class="summary-title">
-    <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
-  </div>
-  <div>
-    <%= truncate(sanitize(article.rendered_content, tags: %w(), attributes: %w(href)), length: 200) %>
-    <%= render partial: 'shared/read_more', locals: {url_options: {controller: "/articles", action: "show", id: article.id}} %>
-  </div>
-</article>
-
-<%#= raw markdown_to_html article.content %>
-
+<%- if category.articles.present? -%>
+<h2 class="feed-heading clear">
+<div class="title"><%= link_to(category.parent, "/categories/#{category.id}") %></div>
+<div class="navi"><%= render partial: 'shared/read_more', locals: {url_options: {controller: "/categories", action: "show", id: category.id}} %></div>
+</h2>
+<%- category.articles.each do |article| %>
+<div class="feed-box">
+<h3 class="summary-title">
+  <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
+</h3>
+<a href="/articles/<%= article.id %>"><h4><%= truncate(sanitize(article.rendered_content, tags: %w(), attributes: %w(href)), length: 200) %><%= render partial: 'shared/read_more', locals: {url_options: {controller: "/articles", action: "show", id: article.id}} %></h4></a>
+</div>
+<%- end -%>
+<%- end -%>
