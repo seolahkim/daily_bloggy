@@ -12,6 +12,7 @@ Category.create parent: "CSS"
 Category.create parent: "JavaScript"
 Category.create parent: "TypeScript",       parent_id: Category.find_by(parent: 'JavaScript').id
 Category.create parent: "CoffeeScript",     parent_id: Category.find_by(parent: 'JavaScript').id
+Category.create parent: "jQuery",           parent_id: Category.find_by(parent: 'JavaScript').id
 Category.create parent: "Angular2",         parent_id: Category.find_by(parent: 'JavaScript').id
 Category.create parent: "Underscore",       parent_id: Category.find_by(parent: 'JavaScript').id
 Category.create parent: "Lodash",           parent_id: Category.find_by(parent: 'JavaScript').id
