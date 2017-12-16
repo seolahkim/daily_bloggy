@@ -1,8 +1,13 @@
 <div class="container">
   <div class="content-inner summary">
     <header class="center">
-      카테고리
-      <h1 class="pane-title">Category</h1>
+      카테고리별 포스트
+      <h1 class="pane-title"><%= @category.parent %></h1>
     </header>
+    <h4 class="feed-heading clear">
+    <div class="title">NEWEST</div>
+    </h4>
+    <%= render partial: 'categories/index', collection: @category.articles, as: :article %>
+    </h2>
   </div>
 </div>

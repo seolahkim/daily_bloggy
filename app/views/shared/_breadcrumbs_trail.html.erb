@@ -1,0 +1,8 @@
+<%- breadcrumbs.items.each_with_index do | breadcrumb, i | %>
+  <%- if breadcrumb.is_a? String %>
+  <%= content_tag(:label, breadcrumb, class: "weight-s") %>
+  <%- elsif breadcrumb.is_a? Hash %>
+  <%= link_to(breadcrumb[:name], breadcrumb[:url_options], class: "weight-b") %>
+  <%- end -%>
+  <%= content_tag(:i, '', class: 'weight-b fa fa-angle-right') if i + 1 < breadcrumbs.items.length %>
+<%- end -%>

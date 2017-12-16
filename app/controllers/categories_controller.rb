@@ -10,8 +10,8 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @breadcrumbs.items << {name: Category.category_name(@category.parent_id)} if @category.parent_id.present?
-    @breadcrumbs.items << {name: @category.parent}
+    @breadcrumbs.items << {name: "TOP", url_options: "/"}
+    @breadcrumbs.items << @category.parent
   end
 
   def set_breadcrumbs

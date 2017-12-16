@@ -1,10 +1,12 @@
 <meta charset="UTF-8">
 <%= stylesheet_link_tag 'application', media: 'all' %>
 <nav class="header">
-  <a href="/feeds" class="box-left logo header-logo">
-    <i class="fa fa-code" aria-hidden="true"></i>
-    <%= display_breadcrumbs() if @breadcrumbs.present? -%>
-  </a>
+  <label class="box-left logo header-logo">
+    <i class="weight-b fa fa-code" aria-hidden="true"></i>
+    <%- if @breadcrumbs.items.present? %>
+      <%= render partial: 'shared/breadcrumbs_trail', locals: {breadcrumbs: @breadcrumbs} %>
+    <%- end -%>
+  </label>
   <div class="box-right item-wrapper">
     <div class="item"><%= link_to 'Home', feeds_path %> </div>
     <div class="item"><%= link_to 'Articles', articles_path %> </div>

@@ -1,0 +1,14 @@
+.square-highlight {
+  display: table;
+  vertical-align: middle;
+  padding: 10px;
+  float: left;
+  text-align: center;
+
+  .counter {
+    display: table-cell;  
+    font-size: 25px;
+    width: 30px;
+  }
+}
+
