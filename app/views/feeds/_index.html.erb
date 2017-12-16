@@ -8,7 +8,7 @@
 <h3 class="summary-title">
   <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
 </h3>
-<a href="/articles/<%= article.id %>"><h4><%= truncate(sanitize(article.rendered_content, tags: %w(), attributes: %w(href)), length: 200) %><%= render partial: 'shared/read_more', locals: {url_options: {controller: "/articles", action: "show", id: article.id}} %></h4></a>
+<a href="/articles/<%= article.id %>"><h4><%= truncate(sanitize(article.rendered_content, tags: %w(), attributes: %w(href)), length: 200) %></h4></a>
 </div>
 <%- end -%>
 <%- end -%>

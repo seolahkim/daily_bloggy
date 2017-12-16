@@ -1,6 +1,12 @@
 a {
   text-decoration: none;  
   color: black;
+  -moz-transition:color .25s ease;   
+  -o-transition:color .25s ease;   
+  -ms-transition:color .25s ease;   
+  -webkit-transition:color .25s ease;   
+  transition:color .25s ease;   
+  &:hover { color: $pale-color; }  
 }
 
 
@@ -17,6 +23,22 @@ a {
 
 .center {
   text-align: center;  
+}
+
+.weight-s {
+  font-weight: 400;
+}
+
+.weight-g {
+  font-weight: 500;
+}
+
+.weight-b {
+  font-weight: 700;
+}
+
+.pale-color {
+  color: $pale-color;
 }
 
 .right {
@@ -98,6 +120,9 @@ a {
 .clear {
   clear: both;
 }
+
+.fl { float: left; }
+.fr { float: right; }
 
 .footer-box {
   width: 25%;
