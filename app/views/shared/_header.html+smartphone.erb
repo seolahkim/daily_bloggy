@@ -1,0 +1,13 @@
+<meta charset="UTF-8">
+<%= stylesheet_link_tag 'application', media: 'all' %>
+<nav class="header">
+  <a href="/feeds" class="box-left logo header-logo">
+    <span>Daily Coding</span>
+  </a>
+  <div class="box-right item-wrapper">
+    <label class="item"><%= link_to 'Home', feeds_path %></label>
+    <label class="item"><%= link_to 'Articles', articles_path %></label>
+    <label class="item"><%= link_to 'About', resume_index_path %></label>
+  </div>
+  <div class="page-top weight-b"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+</nav>
