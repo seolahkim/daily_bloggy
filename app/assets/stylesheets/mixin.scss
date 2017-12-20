@@ -1,0 +1,10 @@
+@media screen and (max-width: 500px) { 
+  nav.header {
+    display: table;
+    width: 100%;
+    .box-left, .box-right {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
