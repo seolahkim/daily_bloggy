@@ -2,10 +2,38 @@
   nav.header {
     display: table;
     width: 100%;
-    .box-left, .box-right {
-      width: 100%;
-      text-align: center;
-      display: inline-block;
+    min-height: unset;
+    line-height: unset;
+    div:first-child { border: 1px solid #dcdcdc; }
+    .header-logo {
+      padding: unset;
+    }
+  }
+}
+
+/* spacing */
+/* ex. pt0, pv0, pa0, mt0, mv0, ma0 */
+@mixin spacing($size) {
+  $type: 'p';
+  $prop: 'padding';
+  @for $i from 1 through 2 {
+    @if $i > 1 {
+      $type: 'm';
+      $prop: 'margin';
+    }
+    .#{$type}t#{$size} { #{$prop}-top:    #{$size}px !important; }
+    .#{$type}r#{$size} { #{$prop}-right:  #{$size}px !important; }
+    .#{$type}b#{$size} { #{$prop}-bottom: #{$size}px !important; }
+    .#{$type}l#{$size} { #{$prop}-left:   #{$size}px !important; }
+    .#{$type}v#{$size},
+    .#{$type}a#{$size} {
+      @extend .#{$type}t#{$size};
+      @extend .#{$type}b#{$size};
+    }
+    .#{$type}h#{$size},
+    .#{$type}a#{$size} {
+      @extend .#{$type}r#{$size};
+      @extend .#{$type}l#{$size};
     }
   }
 }
