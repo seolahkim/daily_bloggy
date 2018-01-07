@@ -17,6 +17,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'rack-user_agent'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 # Markdown & Syntax Highlight
 gem 'redcarpet'
 gem 'coderay'
