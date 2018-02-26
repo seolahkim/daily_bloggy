@@ -9,6 +9,9 @@ a {
   &:hover { color: $pale-color; }  
 }
 
+.pointer {
+  cursor: pointer;  
+}
 
 .socials {
   display: table;
@@ -57,6 +60,9 @@ a {
   width: 50px;
   height: 50px;
   margin: 10px;
+  position: fixed;
+  bottom: 34%;
+  right: 0%;
   border-radius: 100%;
   background-color: rgba(101, 101, 101, 0.8);
   color: white;

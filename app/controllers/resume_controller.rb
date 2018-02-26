@@ -1,5 +1,5 @@
 class ResumeController < ApplicationController
-  layout "feed"
+  layout "application"
   
   def index
   end
