@@ -3,7 +3,7 @@
     <%= link_to article.title, {controller: "/articles", action: "show", id: article.id} %>
   </div>
   <div class="summary-meta">
-    <span class="category"><%= article.related_category_name %><span>
+    <span class="category"><%= link_to(article.related_category_name, category_path(article.category_id)) %><span>
     <span class="date"><%= article.formatted_created_at %><span>
   </div>
   <div class="summary-content">

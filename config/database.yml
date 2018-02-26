@@ -1,5 +1,6 @@
 default: &default
   adapter: mysql2
+  port: 3306
   encoding: utf8
   reconnect: false
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -19,10 +20,11 @@ test:
   database: daily_engineering_test
 
 production:
-  <<: *default
-  database: <%= ENV['RDS_DB_NAME'] %>
-  username: <%= ENV['RDS_USERNAME'] %>
-  password: <%= ENV['RDS_PASSWORD'] %>
-  host: <%= ENV['RDS_HOSTNAME'] %>
-  port: <%= ENV['RDS_PORT'] %>
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: root
+  password: skdms4122l
+  database: daily_engineering_production
+  socket:   /cloudsql/dailycoding-190215:asia-northeast1:dailyengineering-production
 
