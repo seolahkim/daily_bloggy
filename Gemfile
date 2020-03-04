@@ -9,7 +9,7 @@ end
 gem 'rails', '~> 5.1.4.rc1'
 gem "mysql2", "~> 0.4.8"
 gem "appengine", "~> 0.4.1"
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
